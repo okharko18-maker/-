@@ -1,0 +1,2812 @@
+{
+  "lesson_id": "PP-LAB01",
+  "variant_count": 30,
+  "answer_key_included": false,
+  "variants": [
+    {
+      "number": 1,
+      "kind": "rect",
+      "title": "Площа прямокутної ділянки",
+      "inputs": [
+        {
+          "name": "width",
+          "label": "ширина",
+          "unit": "м",
+          "min": 0.1,
+          "max": 100,
+          "strictly_positive": true
+        },
+        {
+          "name": "height",
+          "label": "висота",
+          "unit": "м",
+          "min": 0.1,
+          "max": 100,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "area = width * height",
+      "result_name": "area",
+      "result_unit": "м²",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            4,
+            3
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -0.9,
+            3
+          ],
+          "retry_with": [
+            4,
+            3
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            101,
+            3
+          ],
+          "retry_with": [
+            4,
+            3
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            3
+          ],
+          "retry_with": [
+            4,
+            3
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            3
+          ],
+          "retry_with": [
+            4,
+            3
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            3
+          ],
+          "retry_with": [
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "kind": "rect",
+      "title": "Площа прямокутної картки",
+      "inputs": [
+        {
+          "name": "width",
+          "label": "ширина",
+          "unit": "см",
+          "min": 1,
+          "max": 500,
+          "strictly_positive": true
+        },
+        {
+          "name": "height",
+          "label": "висота",
+          "unit": "см",
+          "min": 1,
+          "max": 500,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "area = width * height",
+      "result_name": "area",
+      "result_unit": "см²",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            120,
+            80
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            0,
+            80
+          ],
+          "retry_with": [
+            120,
+            80
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            501,
+            80
+          ],
+          "retry_with": [
+            120,
+            80
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            80
+          ],
+          "retry_with": [
+            120,
+            80
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            80
+          ],
+          "retry_with": [
+            120,
+            80
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            80
+          ],
+          "retry_with": [
+            120,
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "kind": "rect",
+      "title": "Площа прямокутної пластини",
+      "inputs": [
+        {
+          "name": "width",
+          "label": "ширина",
+          "unit": "мм",
+          "min": 10,
+          "max": 2000,
+          "strictly_positive": true
+        },
+        {
+          "name": "height",
+          "label": "висота",
+          "unit": "мм",
+          "min": 10,
+          "max": 2000,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "area = width * height",
+      "result_name": "area",
+      "result_unit": "мм²",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            250,
+            400
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            9,
+            400
+          ],
+          "retry_with": [
+            250,
+            400
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            2001,
+            400
+          ],
+          "retry_with": [
+            250,
+            400
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            400
+          ],
+          "retry_with": [
+            250,
+            400
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            400
+          ],
+          "retry_with": [
+            250,
+            400
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            400
+          ],
+          "retry_with": [
+            250,
+            400
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "kind": "triangle",
+      "title": "Площа трикутної ділянки",
+      "inputs": [
+        {
+          "name": "base",
+          "label": "основа",
+          "unit": "м",
+          "min": 0.1,
+          "max": 100,
+          "strictly_positive": true
+        },
+        {
+          "name": "height",
+          "label": "висота",
+          "unit": "м",
+          "min": 0.1,
+          "max": 100,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "area = base * height / 2",
+      "result_name": "area",
+      "result_unit": "м²",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            10,
+            6
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -0.9,
+            6
+          ],
+          "retry_with": [
+            10,
+            6
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            101,
+            6
+          ],
+          "retry_with": [
+            10,
+            6
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            6
+          ],
+          "retry_with": [
+            10,
+            6
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            6
+          ],
+          "retry_with": [
+            10,
+            6
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            6
+          ],
+          "retry_with": [
+            10,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "kind": "triangle",
+      "title": "Площа трикутного макета",
+      "inputs": [
+        {
+          "name": "base",
+          "label": "основа",
+          "unit": "см",
+          "min": 1,
+          "max": 300,
+          "strictly_positive": true
+        },
+        {
+          "name": "height",
+          "label": "висота",
+          "unit": "см",
+          "min": 1,
+          "max": 300,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "area = base * height / 2",
+      "result_name": "area",
+      "result_unit": "см²",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            75,
+            40
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            0,
+            40
+          ],
+          "retry_with": [
+            75,
+            40
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            301,
+            40
+          ],
+          "retry_with": [
+            75,
+            40
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            40
+          ],
+          "retry_with": [
+            75,
+            40
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            40
+          ],
+          "retry_with": [
+            75,
+            40
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            40
+          ],
+          "retry_with": [
+            75,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "kind": "triangle",
+      "title": "Площа трикутної деталі",
+      "inputs": [
+        {
+          "name": "base",
+          "label": "основа",
+          "unit": "мм",
+          "min": 5,
+          "max": 1000,
+          "strictly_positive": true
+        },
+        {
+          "name": "height",
+          "label": "висота",
+          "unit": "мм",
+          "min": 5,
+          "max": 1000,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "area = base * height / 2",
+      "result_name": "area",
+      "result_unit": "мм²",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            180,
+            95
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            4,
+            95
+          ],
+          "retry_with": [
+            180,
+            95
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            1001,
+            95
+          ],
+          "retry_with": [
+            180,
+            95
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            95
+          ],
+          "retry_with": [
+            180,
+            95
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            95
+          ],
+          "retry_with": [
+            180,
+            95
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            95
+          ],
+          "retry_with": [
+            180,
+            95
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "kind": "circle",
+      "title": "Площа круглого майданчика",
+      "inputs": [
+        {
+          "name": "radius",
+          "label": "радіус",
+          "unit": "м",
+          "min": 0.1,
+          "max": 50,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "area = pi * radius ** 2",
+      "result_name": "area",
+      "result_unit": "м²",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -0.9
+          ],
+          "retry_with": [
+            2.5
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            51
+          ],
+          "retry_with": [
+            2.5
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc"
+          ],
+          "retry_with": [
+            2.5
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan"
+          ],
+          "retry_with": [
+            2.5
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf"
+          ],
+          "retry_with": [
+            2.5
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "kind": "circle",
+      "title": "Площа круглого диска",
+      "inputs": [
+        {
+          "name": "radius",
+          "label": "радіус",
+          "unit": "см",
+          "min": 1,
+          "max": 200,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "area = pi * radius ** 2",
+      "result_name": "area",
+      "result_unit": "см²",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            12
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            0
+          ],
+          "retry_with": [
+            12
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            201
+          ],
+          "retry_with": [
+            12
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc"
+          ],
+          "retry_with": [
+            12
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan"
+          ],
+          "retry_with": [
+            12
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf"
+          ],
+          "retry_with": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "kind": "circle",
+      "title": "Площа круглого отвору",
+      "inputs": [
+        {
+          "name": "radius",
+          "label": "радіус",
+          "unit": "мм",
+          "min": 0.5,
+          "max": 500,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "area = pi * radius ** 2",
+      "result_name": "area",
+      "result_unit": "мм²",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            25
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -0.5
+          ],
+          "retry_with": [
+            25
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            501
+          ],
+          "retry_with": [
+            25
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc"
+          ],
+          "retry_with": [
+            25
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan"
+          ],
+          "retry_with": [
+            25
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf"
+          ],
+          "retry_with": [
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "kind": "ratio",
+      "title": "Середня швидкість у км/год",
+      "inputs": [
+        {
+          "name": "distance",
+          "label": "відстань",
+          "unit": "км",
+          "min": 0,
+          "max": 10000,
+          "strictly_positive": false
+        },
+        {
+          "name": "time",
+          "label": "час",
+          "unit": "год",
+          "min": 0.01,
+          "max": 48,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "speed = distance / time",
+      "result_name": "speed",
+      "result_unit": "км/год",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            120,
+            2
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            2
+          ],
+          "retry_with": [
+            120,
+            2
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            10001,
+            2
+          ],
+          "retry_with": [
+            120,
+            2
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            2
+          ],
+          "retry_with": [
+            120,
+            2
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            2
+          ],
+          "retry_with": [
+            120,
+            2
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            2
+          ],
+          "retry_with": [
+            120,
+            2
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            120,
+            0
+          ],
+          "retry_with": [
+            120,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "kind": "ratio",
+      "title": "Середня швидкість у м/с",
+      "inputs": [
+        {
+          "name": "distance",
+          "label": "відстань",
+          "unit": "м",
+          "min": 0,
+          "max": 100000,
+          "strictly_positive": false
+        },
+        {
+          "name": "time",
+          "label": "час",
+          "unit": "с",
+          "min": 0.1,
+          "max": 3600,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "speed = distance / time",
+      "result_name": "speed",
+      "result_unit": "м/с",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            1500,
+            120
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            120
+          ],
+          "retry_with": [
+            1500,
+            120
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            100001,
+            120
+          ],
+          "retry_with": [
+            1500,
+            120
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            120
+          ],
+          "retry_with": [
+            1500,
+            120
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            120
+          ],
+          "retry_with": [
+            1500,
+            120
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            120
+          ],
+          "retry_with": [
+            1500,
+            120
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            1500,
+            0
+          ],
+          "retry_with": [
+            1500,
+            120
+          ]
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "kind": "ratio60",
+      "title": "Швидкість за часом у хвилинах",
+      "inputs": [
+        {
+          "name": "distance",
+          "label": "відстань",
+          "unit": "км",
+          "min": 0,
+          "max": 1000,
+          "strictly_positive": false
+        },
+        {
+          "name": "time",
+          "label": "час",
+          "unit": "хв",
+          "min": 1,
+          "max": 600,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "speed = distance / time * 60",
+      "result_name": "speed",
+      "result_unit": "км/год",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            90,
+            75
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            75
+          ],
+          "retry_with": [
+            90,
+            75
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            1001,
+            75
+          ],
+          "retry_with": [
+            90,
+            75
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            75
+          ],
+          "retry_with": [
+            90,
+            75
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            75
+          ],
+          "retry_with": [
+            90,
+            75
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            75
+          ],
+          "retry_with": [
+            90,
+            75
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            90,
+            0
+          ],
+          "retry_with": [
+            90,
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "kind": "ratio",
+      "title": "Густина в г/см³",
+      "inputs": [
+        {
+          "name": "mass",
+          "label": "маса",
+          "unit": "г",
+          "min": 0,
+          "max": 100000,
+          "strictly_positive": false
+        },
+        {
+          "name": "volume",
+          "label": "об’єм",
+          "unit": "см³",
+          "min": 0.01,
+          "max": 100000,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "density = mass / volume",
+      "result_name": "density",
+      "result_unit": "г/см³",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            250,
+            100
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            100
+          ],
+          "retry_with": [
+            250,
+            100
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            100001,
+            100
+          ],
+          "retry_with": [
+            250,
+            100
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            100
+          ],
+          "retry_with": [
+            250,
+            100
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            100
+          ],
+          "retry_with": [
+            250,
+            100
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            100
+          ],
+          "retry_with": [
+            250,
+            100
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            250,
+            0
+          ],
+          "retry_with": [
+            250,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "kind": "ratio",
+      "title": "Густина в кг/м³",
+      "inputs": [
+        {
+          "name": "mass",
+          "label": "маса",
+          "unit": "кг",
+          "min": 0,
+          "max": 5000,
+          "strictly_positive": false
+        },
+        {
+          "name": "volume",
+          "label": "об’єм",
+          "unit": "м³",
+          "min": 0.001,
+          "max": 1000,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "density = mass / volume",
+      "result_name": "density",
+      "result_unit": "кг/м³",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            12,
+            0.5
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            0.5
+          ],
+          "retry_with": [
+            12,
+            0.5
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            5001,
+            0.5
+          ],
+          "retry_with": [
+            12,
+            0.5
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            0.5
+          ],
+          "retry_with": [
+            12,
+            0.5
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            0.5
+          ],
+          "retry_with": [
+            12,
+            0.5
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            0.5
+          ],
+          "retry_with": [
+            12,
+            0.5
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            12,
+            0
+          ],
+          "retry_with": [
+            12,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "kind": "ratio",
+      "title": "Концентрація маси в г/л",
+      "inputs": [
+        {
+          "name": "mass",
+          "label": "маса",
+          "unit": "г",
+          "min": 0,
+          "max": 10000,
+          "strictly_positive": false
+        },
+        {
+          "name": "volume",
+          "label": "об’єм",
+          "unit": "л",
+          "min": 0.01,
+          "max": 500,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "density = mass / volume",
+      "result_name": "density",
+      "result_unit": "г/л",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            45,
+            1.5
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            1.5
+          ],
+          "retry_with": [
+            45,
+            1.5
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            10001,
+            1.5
+          ],
+          "retry_with": [
+            45,
+            1.5
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            1.5
+          ],
+          "retry_with": [
+            45,
+            1.5
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            1.5
+          ],
+          "retry_with": [
+            45,
+            1.5
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            1.5
+          ],
+          "retry_with": [
+            45,
+            1.5
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            45,
+            0
+          ],
+          "retry_with": [
+            45,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "kind": "ratio",
+      "title": "Струм у амперах",
+      "inputs": [
+        {
+          "name": "voltage",
+          "label": "напруга",
+          "unit": "В",
+          "min": 0,
+          "max": 1000,
+          "strictly_positive": false
+        },
+        {
+          "name": "resistance",
+          "label": "опір",
+          "unit": "Ом",
+          "min": 0.01,
+          "max": 1000000,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "current = voltage / resistance",
+      "result_name": "current",
+      "result_unit": "А",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            12,
+            6
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            6
+          ],
+          "retry_with": [
+            12,
+            6
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            1001,
+            6
+          ],
+          "retry_with": [
+            12,
+            6
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            6
+          ],
+          "retry_with": [
+            12,
+            6
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            6
+          ],
+          "retry_with": [
+            12,
+            6
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            6
+          ],
+          "retry_with": [
+            12,
+            6
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            12,
+            0
+          ],
+          "retry_with": [
+            12,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "kind": "ratio",
+      "title": "Струм у міліамперах",
+      "inputs": [
+        {
+          "name": "voltage",
+          "label": "напруга",
+          "unit": "В",
+          "min": 0,
+          "max": 1000,
+          "strictly_positive": false
+        },
+        {
+          "name": "resistance",
+          "label": "опір",
+          "unit": "кОм",
+          "min": 0.01,
+          "max": 1000,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "current = voltage / resistance",
+      "result_name": "current",
+      "result_unit": "мА",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            5,
+            2
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            2
+          ],
+          "retry_with": [
+            5,
+            2
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            1001,
+            2
+          ],
+          "retry_with": [
+            5,
+            2
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            2
+          ],
+          "retry_with": [
+            5,
+            2
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            2
+          ],
+          "retry_with": [
+            5,
+            2
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            2
+          ],
+          "retry_with": [
+            5,
+            2
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            5,
+            0
+          ],
+          "retry_with": [
+            5,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "kind": "ratio",
+      "title": "Струм для мілівольт",
+      "inputs": [
+        {
+          "name": "voltage",
+          "label": "напруга",
+          "unit": "мВ",
+          "min": 0,
+          "max": 100000,
+          "strictly_positive": false
+        },
+        {
+          "name": "resistance",
+          "label": "опір",
+          "unit": "Ом",
+          "min": 0.01,
+          "max": 1000000,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "current = voltage / resistance",
+      "result_name": "current",
+      "result_unit": "мА",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            3300,
+            220
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            220
+          ],
+          "retry_with": [
+            3300,
+            220
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            100001,
+            220
+          ],
+          "retry_with": [
+            3300,
+            220
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            220
+          ],
+          "retry_with": [
+            3300,
+            220
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            220
+          ],
+          "retry_with": [
+            3300,
+            220
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            220
+          ],
+          "retry_with": [
+            3300,
+            220
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            3300,
+            0
+          ],
+          "retry_with": [
+            3300,
+            220
+          ]
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "kind": "cylinder",
+      "title": "Об’єм циліндра в м³",
+      "inputs": [
+        {
+          "name": "radius",
+          "label": "радіус",
+          "unit": "м",
+          "min": 0.1,
+          "max": 20,
+          "strictly_positive": true
+        },
+        {
+          "name": "height",
+          "label": "висота",
+          "unit": "м",
+          "min": 0.1,
+          "max": 100,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "volume = pi * radius ** 2 * height",
+      "result_name": "volume",
+      "result_unit": "м³",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            2,
+            10
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -0.9,
+            10
+          ],
+          "retry_with": [
+            2,
+            10
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            21,
+            10
+          ],
+          "retry_with": [
+            2,
+            10
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            10
+          ],
+          "retry_with": [
+            2,
+            10
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            10
+          ],
+          "retry_with": [
+            2,
+            10
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            10
+          ],
+          "retry_with": [
+            2,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "kind": "cylinder",
+      "title": "Об’єм циліндра в см³",
+      "inputs": [
+        {
+          "name": "radius",
+          "label": "радіус",
+          "unit": "см",
+          "min": 0.1,
+          "max": 200,
+          "strictly_positive": true
+        },
+        {
+          "name": "height",
+          "label": "висота",
+          "unit": "см",
+          "min": 0.1,
+          "max": 500,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "volume = pi * radius ** 2 * height",
+      "result_name": "volume",
+      "result_unit": "см³",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            4,
+            25
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -0.9,
+            25
+          ],
+          "retry_with": [
+            4,
+            25
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            201,
+            25
+          ],
+          "retry_with": [
+            4,
+            25
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            25
+          ],
+          "retry_with": [
+            4,
+            25
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            25
+          ],
+          "retry_with": [
+            4,
+            25
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            25
+          ],
+          "retry_with": [
+            4,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "kind": "cylinder",
+      "title": "Об’єм циліндра в мм³",
+      "inputs": [
+        {
+          "name": "radius",
+          "label": "радіус",
+          "unit": "мм",
+          "min": 1,
+          "max": 1000,
+          "strictly_positive": true
+        },
+        {
+          "name": "height",
+          "label": "висота",
+          "unit": "мм",
+          "min": 1,
+          "max": 2000,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "volume = pi * radius ** 2 * height",
+      "result_name": "volume",
+      "result_unit": "мм³",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            20,
+            75
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            0,
+            75
+          ],
+          "retry_with": [
+            20,
+            75
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            1001,
+            75
+          ],
+          "retry_with": [
+            20,
+            75
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            75
+          ],
+          "retry_with": [
+            20,
+            75
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            75
+          ],
+          "retry_with": [
+            20,
+            75
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            75
+          ],
+          "retry_with": [
+            20,
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "kind": "c_to_f",
+      "title": "Цельсій у Фаренгейт",
+      "inputs": [
+        {
+          "name": "celsius",
+          "label": "температура",
+          "unit": "°C",
+          "min": -273.15,
+          "max": 1000,
+          "strictly_positive": false
+        }
+      ],
+      "formula": "fahrenheit = celsius * 9 / 5 + 32",
+      "result_name": "fahrenheit",
+      "result_unit": "°F",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            18.5
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -274.15
+          ],
+          "retry_with": [
+            18.5
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            1001
+          ],
+          "retry_with": [
+            18.5
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc"
+          ],
+          "retry_with": [
+            18.5
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan"
+          ],
+          "retry_with": [
+            18.5
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf"
+          ],
+          "retry_with": [
+            18.5
+          ]
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "kind": "c_to_k",
+      "title": "Цельсій у кельвіни",
+      "inputs": [
+        {
+          "name": "celsius",
+          "label": "температура",
+          "unit": "°C",
+          "min": -273.15,
+          "max": 1000,
+          "strictly_positive": false
+        }
+      ],
+      "formula": "kelvin = celsius + 273.15",
+      "result_name": "kelvin",
+      "result_unit": "K",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            25
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -274.15
+          ],
+          "retry_with": [
+            25
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            1001
+          ],
+          "retry_with": [
+            25
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc"
+          ],
+          "retry_with": [
+            25
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan"
+          ],
+          "retry_with": [
+            25
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf"
+          ],
+          "retry_with": [
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "kind": "f_to_c",
+      "title": "Фаренгейт у Цельсій",
+      "inputs": [
+        {
+          "name": "fahrenheit",
+          "label": "температура",
+          "unit": "°F",
+          "min": -459.67,
+          "max": 1832,
+          "strictly_positive": false
+        }
+      ],
+      "formula": "celsius = (fahrenheit - 32) * 5 / 9",
+      "result_name": "celsius",
+      "result_unit": "°C",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            77
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -460.67
+          ],
+          "retry_with": [
+            77
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            1833
+          ],
+          "retry_with": [
+            77
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc"
+          ],
+          "retry_with": [
+            77
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan"
+          ],
+          "retry_with": [
+            77
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf"
+          ],
+          "retry_with": [
+            77
+          ]
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "kind": "mean3",
+      "title": "Середня температура",
+      "inputs": [
+        {
+          "name": "first",
+          "label": "перше",
+          "unit": "°C",
+          "min": -100,
+          "max": 100,
+          "strictly_positive": false
+        },
+        {
+          "name": "second",
+          "label": "друге",
+          "unit": "°C",
+          "min": -100,
+          "max": 100,
+          "strictly_positive": false
+        },
+        {
+          "name": "third",
+          "label": "третє",
+          "unit": "°C",
+          "min": -100,
+          "max": 100,
+          "strictly_positive": false
+        }
+      ],
+      "formula": "mean = (first + second + third) / 3",
+      "result_name": "mean",
+      "result_unit": "°C",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            18,
+            20,
+            22
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -101,
+            20,
+            22
+          ],
+          "retry_with": [
+            18,
+            20,
+            22
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            101,
+            20,
+            22
+          ],
+          "retry_with": [
+            18,
+            20,
+            22
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            20,
+            22
+          ],
+          "retry_with": [
+            18,
+            20,
+            22
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            20,
+            22
+          ],
+          "retry_with": [
+            18,
+            20,
+            22
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            20,
+            22
+          ],
+          "retry_with": [
+            18,
+            20,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "kind": "mean3",
+      "title": "Середня затримка",
+      "inputs": [
+        {
+          "name": "first",
+          "label": "перше",
+          "unit": "мс",
+          "min": 0,
+          "max": 10000,
+          "strictly_positive": false
+        },
+        {
+          "name": "second",
+          "label": "друге",
+          "unit": "мс",
+          "min": 0,
+          "max": 10000,
+          "strictly_positive": false
+        },
+        {
+          "name": "third",
+          "label": "третє",
+          "unit": "мс",
+          "min": 0,
+          "max": 10000,
+          "strictly_positive": false
+        }
+      ],
+      "formula": "mean = (first + second + third) / 3",
+      "result_name": "mean",
+      "result_unit": "мс",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            120,
+            150,
+            180
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            150,
+            180
+          ],
+          "retry_with": [
+            120,
+            150,
+            180
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            10001,
+            150,
+            180
+          ],
+          "retry_with": [
+            120,
+            150,
+            180
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            150,
+            180
+          ],
+          "retry_with": [
+            120,
+            150,
+            180
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            150,
+            180
+          ],
+          "retry_with": [
+            120,
+            150,
+            180
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            150,
+            180
+          ],
+          "retry_with": [
+            120,
+            150,
+            180
+          ]
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "kind": "mean3",
+      "title": "Середній бал",
+      "inputs": [
+        {
+          "name": "first",
+          "label": "перше",
+          "unit": "балів",
+          "min": 0,
+          "max": 100,
+          "strictly_positive": false
+        },
+        {
+          "name": "second",
+          "label": "друге",
+          "unit": "балів",
+          "min": 0,
+          "max": 100,
+          "strictly_positive": false
+        },
+        {
+          "name": "third",
+          "label": "третє",
+          "unit": "балів",
+          "min": 0,
+          "max": 100,
+          "strictly_positive": false
+        }
+      ],
+      "formula": "mean = (first + second + third) / 3",
+      "result_name": "mean",
+      "result_unit": "балів",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            70,
+            85,
+            90
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            85,
+            90
+          ],
+          "retry_with": [
+            70,
+            85,
+            90
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            101,
+            85,
+            90
+          ],
+          "retry_with": [
+            70,
+            85,
+            90
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            85,
+            90
+          ],
+          "retry_with": [
+            70,
+            85,
+            90
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            85,
+            90
+          ],
+          "retry_with": [
+            70,
+            85,
+            90
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            85,
+            90
+          ],
+          "retry_with": [
+            70,
+            85,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "kind": "ratio100",
+      "title": "Витрата в л/100 км",
+      "inputs": [
+        {
+          "name": "fuel",
+          "label": "пальне",
+          "unit": "л",
+          "min": 0,
+          "max": 1000,
+          "strictly_positive": false
+        },
+        {
+          "name": "distance",
+          "label": "відстань",
+          "unit": "км",
+          "min": 0.1,
+          "max": 5000,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "rate = fuel / distance * 100",
+      "result_name": "rate",
+      "result_unit": "л/100 км",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            8,
+            100
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            100
+          ],
+          "retry_with": [
+            8,
+            100
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            1001,
+            100
+          ],
+          "retry_with": [
+            8,
+            100
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            100
+          ],
+          "retry_with": [
+            8,
+            100
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            100
+          ],
+          "retry_with": [
+            8,
+            100
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            100
+          ],
+          "retry_with": [
+            8,
+            100
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            8,
+            0
+          ],
+          "retry_with": [
+            8,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "kind": "inverse_ratio",
+      "title": "Паливна ефективність у км/л",
+      "inputs": [
+        {
+          "name": "distance",
+          "label": "відстань",
+          "unit": "км",
+          "min": 0,
+          "max": 5000,
+          "strictly_positive": false
+        },
+        {
+          "name": "fuel",
+          "label": "пальне",
+          "unit": "л",
+          "min": 0.1,
+          "max": 1000,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "efficiency = distance / fuel",
+      "result_name": "efficiency",
+      "result_unit": "км/л",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            240,
+            16
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            16
+          ],
+          "retry_with": [
+            240,
+            16
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            5001,
+            16
+          ],
+          "retry_with": [
+            240,
+            16
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            16
+          ],
+          "retry_with": [
+            240,
+            16
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            16
+          ],
+          "retry_with": [
+            240,
+            16
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            16
+          ],
+          "retry_with": [
+            240,
+            16
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            240,
+            0
+          ],
+          "retry_with": [
+            240,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "kind": "ratio",
+      "title": "Витрата в мл/км",
+      "inputs": [
+        {
+          "name": "fuel",
+          "label": "пальне",
+          "unit": "мл",
+          "min": 0,
+          "max": 1000000,
+          "strictly_positive": false
+        },
+        {
+          "name": "distance",
+          "label": "відстань",
+          "unit": "км",
+          "min": 0.1,
+          "max": 5000,
+          "strictly_positive": true
+        }
+      ],
+      "formula": "rate = fuel / distance",
+      "result_name": "rate",
+      "result_unit": "мл/км",
+      "display_decimals": 3,
+      "cases": [
+        {
+          "name": "допустимий набір",
+          "values": [
+            8000,
+            100
+          ]
+        },
+        {
+          "name": "нижче допустимого діапазону, потім коректне",
+          "values": [
+            -1,
+            100
+          ],
+          "retry_with": [
+            8000,
+            100
+          ]
+        },
+        {
+          "name": "вище допустимого діапазону, потім коректне",
+          "values": [
+            1000001,
+            100
+          ],
+          "retry_with": [
+            8000,
+            100
+          ]
+        },
+        {
+          "name": "нечисловий ввід, потім коректне",
+          "raw_values": [
+            "abc",
+            100
+          ],
+          "retry_with": [
+            8000,
+            100
+          ]
+        },
+        {
+          "name": "NaN, потім коректне",
+          "raw_values": [
+            "nan",
+            100
+          ],
+          "retry_with": [
+            8000,
+            100
+          ]
+        },
+        {
+          "name": "нескінченність, потім коректне",
+          "raw_values": [
+            "inf",
+            100
+          ],
+          "retry_with": [
+            8000,
+            100
+          ]
+        },
+        {
+          "name": "нульовий дільник, потім коректне",
+          "values": [
+            8000,
+            0
+          ],
+          "retry_with": [
+            8000,
+            100
+          ]
+        }
+      ]
+    }
+  ]
+}
